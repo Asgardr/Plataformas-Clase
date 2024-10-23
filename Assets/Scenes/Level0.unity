@@ -272,7 +272,7 @@ MonoBehaviour:
   greenSceneName: LevelGreen
   redSceneName: 
   blueSceneName: LevelBlue
-  yellowSceneName: 
+  yellowSceneName: LevelYellow
 --- !u!4 &346873681
 Transform:
   m_ObjectHideFlags: 0
@@ -532,7 +532,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &874749047
 RectTransform:
   m_ObjectHideFlags: 0
@@ -602,7 +602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b8d842fcc5afa64b8b7cf7d34522272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TotalTime: 5
+  TotalTime: 10
 --- !u!1 &918530612 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1889354466447565124, guid: fe5d8b7f08d22fd43968e1814a769cbc, type: 3}
@@ -620,6 +620,7 @@ GameObject:
   - component: {fileID: 995173991}
   - component: {fileID: 995173990}
   - component: {fileID: 995173989}
+  - component: {fileID: 995173993}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -711,6 +712,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &995173993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995173988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb52a31f1d3567469e9e5076d49e1c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerUpTimer: {fileID: 874749050}
 --- !u!224 &1181176077 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4793553584804740679, guid: d194a36ff41243345ad8ed1c8ea789fd, type: 3}
@@ -1002,10 +1016,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 916101537086007999, guid: 0e933a59d096faf4a9e4157a7cbcea0d, type: 3}
-      propertyPath: _doorColor
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1945908183501891471, guid: 0e933a59d096faf4a9e4157a7cbcea0d, type: 3}
       propertyPath: m_Name
       value: Nivel0

@@ -27,6 +27,7 @@ public class StickyFloor : MonoBehaviour {
 
     void OnTriggerExit(Collider other)
     {
+        MovingPlatform movingPlatform = gameObject.GetComponent<MovingPlatform>();
         //TODO 2: Cuando el objeto que caiga sea attachable, como estamos saliendo, desatachamos el objeto. Ojo, la scala puede cambiar!!!
         Atachable atachable = other.GetComponent<Atachable>();
         if (atachable.IsAtached && atachable != null)
@@ -34,6 +35,8 @@ public class StickyFloor : MonoBehaviour {
             other.transform.SetParent(m_originalParent, true);
             m_originalParent = null;
             atachable.IsAtached = false;
+            Vector3 direction = movingPlatform.GetDirection();
+            other.gameObject.GetComponent<Rigidbody>().AddForce(direction * movingPlatform.m_MovementSpeed);
         }
     }
 }

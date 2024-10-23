@@ -91,4 +91,11 @@ public class MovingPlatform : MonoBehaviour {
 			m_CurrentWaypoint = (m_CurrentWaypoint == m_Waypoint1) ? m_Waypoint2 : m_Waypoint1;
         }
     }
+
+	public Vector3 GetDirection() 
+	{
+        Vector3 direction = m_CurrentWaypoint.position - transform.position;
+        direction.Normalize();
+		return direction;
+    }
 }

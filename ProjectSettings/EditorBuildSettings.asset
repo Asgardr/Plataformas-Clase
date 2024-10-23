@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelBlue.unity
     guid: d2af903858bc39f469bf04f6026827ff
+  - enabled: 1
+    path: Assets/Scenes/LevelYellow.unity
+    guid: b972531d4a4883540bcac1f3e4fde41c
   m_configObjects: {}

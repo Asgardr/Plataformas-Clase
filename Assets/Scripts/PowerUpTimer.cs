@@ -4,8 +4,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Image))]
 public class PowerUpTimer : MonoBehaviour
 {
-
-	public float TotalTime;
+    [HideInInspector]
+    public float TotalTime;
 
 	private float m_RemainingTime;
 	private Image m_Image;

@@ -120,5 +120,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa97de1188dc8b0418a8b720597b38dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_duration: 0
+  m_duration: 3
   m_SuperJumpHeight: 12
