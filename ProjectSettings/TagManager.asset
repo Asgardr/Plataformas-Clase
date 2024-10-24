@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fire
   - GameManager
+  - SuperJump
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Minimapa
+  - Ground
   - 
   - 
   - 

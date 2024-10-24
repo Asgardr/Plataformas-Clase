@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using Plataformas;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
@@ -236,35 +235,5 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		{
 			m_JumpPower = m_lastPowerUp;
 		}
-
-        IEnumerator OnTriggerEnter(Collider other)
-        {
-            if (other.tag == "PowerUp")
-            {
-                TrailRenderer trailRenderer = GetComponent<TrailRenderer>();
-                // TODO 1 - Le envío un mensaje "SetJumpHeight" con la altura que tengo configurada para el super-salto
-                //ThirdPersonCharacter characterController = other.GetComponent<ThirdPersonCharacter>();
-                SetJumpHeight(other.GetComponent<SuperJump>());
-                // TODO 2 - Desactivo el renderer y el collider de mi gameObject
-                // Pista: atributo "enabled"
-                GetComponent<Renderer>().enabled = false;
-                GetComponent<Collider>().enabled = false;
-
-                // TODO Refactor 1 - Iniciar el timer del GUIManager (método StartPowerUpTimer)
-                GUIManager.Instance.StartPowerUpTimer(m_duration);
-                // TODO Refactor 2 - Obtener el componente TrailRenderer del jugador y activarlo
-                trailRenderer.enabled = true;
-
-                yield return new WaitForSeconds(m_duration);
-
-                // TODO 3 - Envío un mensaje recuperando la altura del salto anterior
-                characterController.RestoreJumpHeight();
-
-                // TODO Refactor 3 - Obtener el componente TrailRenderer del jugador y desactivarlo
-                trailRenderer.enabled = false;
-
-                Destroy(gameObject);
-            }
-        }
     }
 }

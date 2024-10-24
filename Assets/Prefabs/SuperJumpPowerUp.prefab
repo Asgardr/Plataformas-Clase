@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -7023158218624047784}
   m_Layer: 0
   m_Name: SuperJumpPowerUp
-  m_TagString: Untagged
+  m_TagString: SuperJump
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

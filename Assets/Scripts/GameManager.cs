@@ -153,6 +153,7 @@ public class GameManager : MonoBehaviour
 	/// </summary>
 	public void RespawnPlayer()
 	{
+		m_Player.GetComponent<PowerUpController>().StopPowerUp();
 		// Colocamos al player en el punto de spawn actual
 		m_Player.transform.position = m_CurrentSpawnPoint.position;
 	}

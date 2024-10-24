@@ -35,8 +35,10 @@ public class StickyFloor : MonoBehaviour {
             other.transform.SetParent(m_originalParent, true);
             m_originalParent = null;
             atachable.IsAtached = false;
+
+            //Ejercicio 2
             Vector3 direction = movingPlatform.GetDirection();
-            other.gameObject.GetComponent<Rigidbody>().AddForce(direction * movingPlatform.m_MovementSpeed);
+            other.gameObject.GetComponent<Rigidbody>().AddForce(direction * movingPlatform.m_MovementSpeed, ForceMode.Impulse);
         }
     }
 }

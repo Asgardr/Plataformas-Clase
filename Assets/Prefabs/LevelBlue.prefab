@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8756491781571689138}
   - component: {fileID: 6415835831520522391}
   - component: {fileID: 1994595881189718533}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MovingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 758550766694684025}
   - component: {fileID: 758550766694684024}
   - component: {fileID: 758550766694684026}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Corridor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 4026250736833117749}
   - component: {fileID: 5398541962624476534}
   - component: {fileID: 4971722223685821369}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RotatePlatform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5059394903892569587}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Watpoint1
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -411,7 +411,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 327957228016044427}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Watpoint2
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -442,7 +442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 169107068708106090}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MovilePlatformParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -476,7 +476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915396338888429566}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LevelBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -514,7 +514,7 @@ GameObject:
   - component: {fileID: 8612828473309319538}
   - component: {fileID: 4278336959849692246}
   - component: {fileID: 9214142309996742525}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RotatePlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
